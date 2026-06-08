@@ -6,15 +6,15 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col items-center justify-center bg-navy overflow-hidden"
       aria-label="Hero section"
     >
-      {/* Subtle background pattern */}
+      {/* Hero photo */}
       <div
-        className="absolute inset-0 bg-[url('/placeholder-hero.svg')] bg-repeat opacity-5"
+        className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat"
         aria-hidden="true"
       />
 
-      {/* Diagonal gradient overlay */}
+      {/* Dark overlay so text stays readable */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-navy via-navy/95 to-forest/80"
+        className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-forest/75"
         aria-hidden="true"
       />
 

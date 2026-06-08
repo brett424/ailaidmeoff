@@ -18,15 +18,11 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Image placeholder — shown second on mobile */}
           <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
-            <div
-              className="w-full max-w-sm aspect-square bg-navy/10 border-2 border-gold rounded-lg flex items-center justify-center"
-              role="img"
-              aria-label="Photo of Dr. Brett Blair"
-            >
-              <span className="text-charcoal/40 text-sm text-center px-8">
-                Photo of Dr. Brett Blair
-              </span>
-            </div>
+            <img
+              src="/brett-headshot.png"
+              alt="Dr. Brett Blair, PhD"
+              className="w-full max-w-sm rounded-lg border-2 border-gold object-cover shadow-lg"
+            />
           </div>
 
           {/* Right: Bio — shown first on mobile */}
