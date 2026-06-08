@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Subtle geometric repeating pattern for dark hero background -->
+  <!-- Small dots arranged in a grid -->
+  <defs>
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1.5" fill="#D4AF37" opacity="0.4" />
+    </pattern>
+    <pattern id="lines" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="80" y2="80" stroke="#1A3C34" stroke-width="0.5" opacity="0.3" />
+      <line x1="80" y1="0" x2="0" y2="80" stroke="#1A3C34" stroke-width="0.5" opacity="0.3" />
+    </pattern>
+  </defs>
+  <!-- Layer 1: subtle cross-hatch lines -->
+  <rect width="120" height="120" fill="url(#lines)" />
+  <!-- Layer 2: gold dot grid -->
+  <rect width="120" height="120" fill="url(#dots)" />
+  <!-- Corner geometric accents -->
+  <polygon points="0,0 30,0 0,30" fill="#D4AF37" opacity="0.08" />
+  <polygon points="120,120 90,120 120,90" fill="#D4AF37" opacity="0.08" />
+  <polygon points="120,0 90,0 120,30" fill="#1A3C34" opacity="0.15" />
+  <polygon points="0,120 30,120 0,90" fill="#1A3C34" opacity="0.15" />
+  <!-- Center subtle diamond -->
+  <polygon points="60,20 100,60 60,100 20,60" fill="none" stroke="#D4AF37" stroke-width="0.5" opacity="0.12" />
+  <polygon points="60,35 85,60 60,85 35,60" fill="none" stroke="#D4AF37" stroke-width="0.4" opacity="0.1" />
+</svg>
