@@ -13,9 +13,9 @@ const steps = [
     number: '02',
     title: 'Secure Your Financial Foundation',
     description:
-      "Severance, unemployment insurance, COBRA, and emergency fund — in that order. Don't let panic drive decisions. Get a clear 90-day runway before making any major career moves.",
+      "Job loss triggers financial fear — and fear leads to costly mistakes. Cashing out retirement accounts early, taking the first offer just for the paycheck, making decisions you'll regret. Before you touch your 401k or make any major money moves, let's have a quick conversation. I'll help you think it through and point you to the right resources.",
     linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
-    linkLabel: 'Map your 90-day runway',
+    linkLabel: "Let's think this through together",
   },
   {
     number: '03',
