@@ -61,17 +61,13 @@ export default function Reality() {
 
         {/* Personal Story Block */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left: Photo placeholder */}
+          {/* Left: Photo */}
           <div className="flex flex-col items-center lg:items-start">
-            <div
-              className="w-full max-w-sm aspect-square bg-navy/10 border-2 border-gold/40 rounded-xl flex items-center justify-center"
-              role="img"
-              aria-label="Photo of Dr. Brett A. Blair"
-            >
-              <span className="text-charcoal/40 text-sm text-center px-8">
-                Photo of Dr. Brett A. Blair
-              </span>
-            </div>
+            <img
+              src="/brett-headshot.jpg"
+              alt="Dr. Brett A. Blair"
+              className="w-full max-w-sm aspect-square object-cover object-top rounded-xl shadow-2xl shadow-navy/40"
+            />
           </div>
 
           {/* Right: Story */}
