@@ -2,7 +2,7 @@ import { Check } from 'lucide-react'
 
 interface ProgramCardProps {
   badge: string
-  badgeStyle: 'default' | 'featured' | 'coaching'
+  badgeStyle: 'default' | 'featured' | 'gold'
   title: string
   price: string
   description: string
@@ -28,7 +28,7 @@ function ProgramCard({
   const badgeClasses = {
     default: 'bg-white/10 text-white/70',
     featured: 'bg-gold text-navy',
-    coaching: 'bg-white/10 text-white/70',
+    gold: 'bg-gold text-navy',
   }
 
   const ctaClasses = {
@@ -45,25 +45,20 @@ function ProgramCard({
           : 'border-white/10 bg-navy/40 hover:border-white/20'
       }`}
     >
-      {/* Badge */}
       <span
         className={`inline-block self-start px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 ${badgeClasses[badgeStyle]}`}
       >
         {badge}
       </span>
 
-      {/* Title */}
       <h3 className="text-white text-xl font-black mb-2">{title}</h3>
 
-      {/* Price */}
       <p className={`text-2xl sm:text-3xl font-black mb-4 ${featured ? 'text-gold' : 'text-white'}`}>
         {price}
       </p>
 
-      {/* Description */}
       <p className="text-white/70 text-sm leading-relaxed mb-6 flex-1">{description}</p>
 
-      {/* Features */}
       <ul className="flex flex-col gap-2.5 mb-8">
         {features.map((feature) => (
           <li key={feature} className="flex items-start gap-2.5">
@@ -77,9 +72,10 @@ function ProgramCard({
         ))}
       </ul>
 
-      {/* CTA */}
       <a
         href={ctaHref}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`w-full text-center px-6 py-3.5 rounded-lg font-semibold text-sm transition-all duration-200 active:scale-95 ${ctaClasses[ctaStyle]}`}
       >
         {ctaLabel}
@@ -110,30 +106,47 @@ export default function Programs() {
         </h2>
 
         {/* Subtext */}
-        <p className="text-white/60 text-base sm:text-lg mb-16 max-w-xl">
+        <p className="text-white/60 text-base sm:text-lg mb-12 max-w-xl">
           Built from research and lived experience — not theory.
         </p>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-          {/* Card 1: Flourishing Resilience */}
-          <ProgramCard
-            badge="Self-Paced Course"
-            badgeStyle="default"
-            title="Flourishing Resilience"
-            price="$97"
-            description="Six focused video sessions and a PDF workbook built around the science of resilience. The frameworks and tools I've used with coaching clients navigating exactly this kind of transition."
-            features={[
-              '6 video modules',
-              'Workbook + exercises',
-              'Lifetime access',
-            ]}
-            ctaLabel="Enroll Now →"
-            ctaStyle="forest"
-            ctaHref="#"
-          />
+        {/* Flagship Coaching Block */}
+        <div className="mb-12 p-8 sm:p-10 rounded-2xl border border-gold/30 bg-gradient-to-br from-white/5 to-gold/5">
+          <p className="text-gold text-xs font-bold tracking-widest uppercase mb-3">
+            The Flagship Offer
+          </p>
+          <h3 className="text-white text-2xl sm:text-3xl font-black mb-4 leading-tight max-w-2xl">
+            Private 1:1 Coaching — $1,500/month
+          </h3>
+          <p className="text-white/70 text-base leading-relaxed max-w-2xl mb-6">
+            I work with a small number of clients at a time. This is not a course. Not a group.
+            Not a program you work through on your own. It is direct, private, weekly work with
+            me — built around where you are, what you&rsquo;re carrying, and where you&rsquo;re
+            trying to go.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+            <a
+              href="https://calendly.com/brett-flourishinmidlife/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-7 py-3.5 bg-gold text-navy font-bold text-sm rounded-lg hover:bg-gold/90 active:scale-95 transition-all duration-200 shadow-lg shadow-gold/20"
+            >
+              Book a Free 30-Min Strategy Call →
+            </a>
+            <p className="text-white/40 text-xs m-0">
+              No cost. No obligation. I respond to every inquiry personally.
+            </p>
+          </div>
+        </div>
 
-          {/* Card 2: When a Chapter Ends — Featured */}
+        {/* Divider */}
+        <p className="text-white/25 text-xs font-semibold tracking-widest uppercase text-center mb-10">
+          — Self-Paced Resources —
+        </p>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start max-w-3xl mx-auto">
+          {/* Card 1: When a Chapter Ends */}
           <ProgramCard
             badge="Most Comprehensive"
             badgeStyle="featured"
@@ -148,25 +161,25 @@ export default function Programs() {
             ]}
             ctaLabel="Learn More →"
             ctaStyle="gold"
-            ctaHref="#"
+            ctaHref="https://flourishinmidlife.com/wace-landing-page"
             featured
           />
 
-          {/* Card 3: 1:1 Coaching */}
+          {/* Card 2: Flourishing Resilience */}
           <ProgramCard
-            badge="Private Coaching"
-            badgeStyle="coaching"
-            title="1:1 Coaching"
-            price="Starting at $1,500/mo"
-            description="One-on-one work with Dr. Blair directly. For the person who is ready to do the real work with someone who has walked the path — multiple times."
+            badge="Self-Paced Course"
+            badgeStyle="default"
+            title="Flourishing Resilience"
+            price="$97"
+            description="Six focused video sessions and a PDF workbook built around the science of resilience. The frameworks and tools I've used with coaching clients navigating exactly this kind of transition."
             features={[
-              'Weekly 60-min sessions',
-              'Unlimited async support',
-              'Custom action plan',
+              '6 video modules',
+              'Workbook + exercises',
+              'Lifetime access',
             ]}
-            ctaLabel="Apply Now →"
-            ctaStyle="forest-alt"
-            ctaHref="#"
+            ctaLabel="Enroll Now →"
+            ctaStyle="forest"
+            ctaHref="https://flourishinginmidlife.podia.com/flourishing-resilience"
           />
         </div>
       </div>

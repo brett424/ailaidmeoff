@@ -45,7 +45,7 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
           <a
             href="#assessment"
             className="inline-flex items-center px-8 py-4 bg-gold text-navy font-bold text-base rounded-md hover:bg-gold/90 active:scale-95 transition-all duration-200 shadow-lg shadow-gold/20 w-full sm:w-auto justify-center"
@@ -59,6 +59,19 @@ export default function Hero() {
             Learn More
           </a>
         </div>
+
+        {/* Direct coaching path */}
+        <p className="text-white/45 text-sm mb-8">
+          Already know you want to talk?{' '}
+          <a
+            href="https://calendly.com/brett-flourishinmidlife/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold underline font-semibold hover:text-gold/80 transition-colors"
+          >
+            Schedule a free 30-min strategy call directly →
+          </a>
+        </p>
 
         {/* Trust Strip */}
         <p className="text-white/50 text-sm font-medium tracking-wide">

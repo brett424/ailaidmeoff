@@ -64,6 +64,19 @@ export default function Assessment() {
         <p className="text-charcoal/50 text-sm">
           Your results are private. No spam. Just honest guidance.
         </p>
+
+        {/* Skip to call */}
+        <p className="text-charcoal/40 text-sm mt-3">
+          Prefer to skip straight to a conversation?{' '}
+          <a
+            href="https://calendly.com/brett-flourishinmidlife/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gold underline font-medium hover:text-gold/80 transition-colors"
+          >
+            Book a free 30-min strategy call directly.
+          </a>
+        </p>
       </div>
     </section>
   )
