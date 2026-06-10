@@ -19,14 +19,6 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Refresh Your Career Assets',
-    description:
-      "Your resume and LinkedIn need updating — but most people skip the harder step first: figuring out what story to tell. After a disruption like this, your professional identity has shifted. Before you rewrite a single bullet point, let's get clear on the narrative. The words follow from that.",
-    linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
-    linkLabel: "Let's find your story",
-  },
-  {
-    number: '04',
     title: 'Build AI Fluency — Fast',
     description:
       "You don't need to become an engineer. I'm a psychologist who turned 65 and rebuilt an entire business using AI — starting from zero. The barrier isn't technical. It's psychological. If I can do it, I can show you the door. The rest is up to you.",
@@ -34,7 +26,7 @@ const steps = [
     linkLabel: "Let's talk about what's possible",
   },
   {
-    number: '05',
+    number: '04',
     title: 'Redesign Your Next Chapter',
     description:
       "This is not the time for desperation. It is the time for intentionality. What do you actually want the next chapter to look like? That question deserves a real answer.",
@@ -61,56 +53,49 @@ export default function NextSteps() {
           id="next-steps-heading"
           className="text-white text-3xl sm:text-4xl lg:text-5xl font-black mb-4 max-w-2xl text-balance"
         >
-          Five Things to Do{' '}
+          Four Things to Do{' '}
           <span className="text-gold">Right Now</span>
         </h2>
 
         {/* Subtext */}
         <p className="text-white/70 text-base sm:text-lg max-w-2xl mb-14 leading-relaxed">
-          Before you update your LinkedIn or send a single application, do these five things first.
+          Before you update your LinkedIn or send a single application, do these four things first.
         </p>
 
         {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {steps.map((step, index) => {
-            const isLastOdd = steps.length % 3 !== 0 && index === steps.length - 1
-            return (
-              <article
-                key={step.number}
-                className={`bg-navy rounded-xl p-8 flex flex-col gap-4 border border-white/5 hover:border-gold/30 transition-colors duration-300 group ${
-                  isLastOdd ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
-                }`}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {steps.map((step) => (
+            <article
+              key={step.number}
+              className="bg-navy rounded-xl p-8 flex flex-col gap-4 border border-white/5 hover:border-gold/30 transition-colors duration-300 group"
+            >
+              {/* Number */}
+              <span className="text-gold text-5xl font-black leading-none select-none">
+                {step.number}
+              </span>
+
+              {/* Title */}
+              <h3 className="text-white text-lg font-bold leading-snug">
+                {step.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-white/70 text-sm leading-relaxed flex-1">
+                {step.description}
+              </p>
+
+              {/* Link */}
+              <a
+                href={step.linkHref}
+                target={step.linkHref.startsWith('http') ? '_blank' : undefined}
+                rel={step.linkHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="inline-flex items-center gap-1.5 text-gold text-sm font-semibold group-hover:gap-2.5 transition-all duration-200 mt-auto"
               >
-                {/* Number */}
-                <span className="text-gold text-5xl font-black leading-none select-none">
-                  {step.number}
-                </span>
-
-                {/* Title */}
-                <h3 className="text-white text-lg font-bold leading-snug">
-                  {step.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-white/70 text-sm leading-relaxed flex-1">
-                  {step.description}
-                </p>
-
-                {/* Link */}
-                {step.linkHref && step.linkLabel && (
-                  <a
-                    href={step.linkHref}
-                    target={step.linkHref.startsWith('http') ? '_blank' : undefined}
-                    rel={step.linkHref.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="inline-flex items-center gap-1.5 text-gold text-sm font-semibold group-hover:gap-2.5 transition-all duration-200 mt-auto"
-                  >
-                    {step.linkLabel}
-                    <ArrowRight size={14} strokeWidth={2.5} />
-                  </a>
-                )}
-              </article>
-            )
-          })}
+                {step.linkLabel}
+                <ArrowRight size={14} strokeWidth={2.5} />
+              </a>
+            </article>
+          ))}
         </div>
       </div>
     </section>
