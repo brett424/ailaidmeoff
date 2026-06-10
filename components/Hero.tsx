@@ -14,7 +14,7 @@ export default function Hero() {
 
       {/* Dark overlay so text stays readable */}
       <div
-        className="absolute inset-0 bg-gradient-to-br from-navy/90 via-navy/80 to-forest/75"
+        className="absolute inset-0 bg-gradient-to-br from-navy/65 via-navy/55 to-forest/50"
         aria-hidden="true"
       />
 
