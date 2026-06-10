@@ -29,10 +29,10 @@ const skillResources = [
 
 const mindsetResources = [
   {
-    title: 'When a Chapter Ends — Dr. Brett Blair',
+    title: 'From Autopilot to Authentic — Dr. Brett Blair',
     description:
-      'Built from research and hard-won experience: a course for professionals navigating major life transitions. This is where to start.',
-    href: 'https://flourishinmidlife.com/wace-landing-page',
+      'Brett\'s book on breaking free from default living and designing a life that actually fits who you are. A grounding read for anyone at a crossroads.',
+    href: 'https://www.amazon.com/Autopilot-Authentic-Philosophies-Hill-Exceptional-ebook/dp/B00U2MZ75E/',
   },
   {
     title: 'Transitions — William Bridges',
