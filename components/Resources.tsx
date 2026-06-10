@@ -2,55 +2,55 @@ import { ArrowRight } from 'lucide-react'
 
 const skillResources = [
   {
+    title: 'AI For Everyone — Andrew Ng',
+    description:
+      'The best non-technical introduction to AI available. Free to audit on Coursera. Start here if you\'re starting from zero.',
+    href: 'https://www.coursera.org/learn/ai-for-everyone',
+  },
+  {
     title: 'Google Career Certificates',
     description:
       'Industry-recognized credentials in data, project management, and more. Free with financial aid.',
-    href: '#',
-  },
-  {
-    title: 'Coursera AI Fundamentals',
-    description:
-      'Structured AI courses from Stanford, DeepLearning.AI, and Google. Start free.',
-    href: '#',
+    href: 'https://grow.google/certificates/',
   },
   {
     title: 'LinkedIn Learning',
     description:
-      'Curated paths for mid-career professionals pivoting into AI-adjacent roles.',
-    href: '#',
+      'Curated paths for mid-career professionals pivoting into AI-adjacent roles. Often free with a library card.',
+    href: 'https://www.linkedin.com/learning/',
   },
   {
-    title: 'Prompting & ChatGPT Mastery',
+    title: 'Prompt Engineering Guide',
     description:
-      'Practical courses on using AI tools as a professional superpower.',
-    href: '#',
+      'Free, community-maintained guide to using AI tools effectively. The practical skills employers are starting to expect.',
+    href: 'https://www.promptingguide.ai/',
   },
 ]
 
-const financialResources = [
+const mindsetResources = [
   {
-    title: 'Severance Negotiation Guide',
+    title: 'When a Chapter Ends — Dr. Brett Blair',
     description:
-      'Most professionals leave money on the table. Know your leverage before you sign anything.',
-    href: '#',
+      'Built from research and hard-won experience: a course for professionals navigating major life transitions. This is where to start.',
+    href: 'https://flourishinmidlife.com/wace-landing-page',
   },
   {
-    title: 'Unemployment Benefits',
+    title: 'Transitions — William Bridges',
     description:
-      'State-by-state guide to filing quickly and maximizing your benefit period.',
-    href: '#',
+      'The definitive book on navigating life\'s major changes. Written in 1980, more relevant than ever. Read this before you do anything else.',
+    href: 'https://www.amazon.com/s?k=transitions+william+bridges',
   },
   {
-    title: 'COBRA & Health Coverage',
+    title: 'Greater Good Science Center',
     description:
-      "Understanding your options so healthcare doesn't become a crisis on top of a crisis.",
-    href: '#',
+      'UC Berkeley\'s research hub on resilience, well-being, and human flourishing. Evidence-based, free, and genuinely useful.',
+    href: 'https://greatergood.berkeley.edu',
   },
   {
-    title: 'Emergency Fund Planning',
+    title: 'Self-Compassion — Dr. Kristin Neff',
     description:
-      'How to build a 90-day financial runway even when you&rsquo;re scared.',
-    href: '#',
+      'Research-backed tools for treating yourself with the same kindness you\'d give a friend. Essential for anyone in a difficult transition.',
+    href: 'https://self-compassion.org/',
   },
 ]
 
@@ -126,16 +126,16 @@ export default function Resources() {
             </div>
           </div>
 
-          {/* Right Column: Financial Guidance */}
+          {/* Right Column: Mindset & Resilience */}
           <div>
             <div className="flex items-center gap-3 mb-6">
               <span className="inline-block w-3 h-3 rounded-full bg-gold" aria-hidden="true" />
               <h3 className="text-charcoal text-sm font-bold uppercase tracking-widest">
-                Financial Guidance
+                Mindset &amp; Resilience
               </h3>
             </div>
             <div className="flex flex-col gap-4">
-              {financialResources.map((resource) => (
+              {mindsetResources.map((resource) => (
                 <ResourceCard
                   key={resource.title}
                   title={resource.title}
