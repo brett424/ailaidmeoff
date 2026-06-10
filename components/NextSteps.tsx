@@ -6,30 +6,40 @@ const steps = [
     title: 'Process the Loss First',
     description:
       "What you're feeling is grief, not weakness. The research is clear: professionals who skip the emotional work stall out. Give yourself permission to feel the loss before you rush to fix it.",
+    linkHref: '#assessment',
+    linkLabel: 'Take the free assessment',
   },
   {
     number: '02',
     title: 'Secure Your Financial Foundation',
     description:
       "Severance, unemployment insurance, COBRA, and emergency fund — in that order. Don't let panic drive decisions. Get a clear 90-day runway before making any major career moves.",
+    linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
+    linkLabel: 'Map your 90-day runway',
   },
   {
     number: '03',
     title: 'Refresh Your Career Assets',
     description:
       "Your resume, LinkedIn profile, and portfolio need an AI-era upgrade. Reframe your experience around outcomes, not job duties. Keywords matter more than ever.",
+    linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
+    linkLabel: 'Get a resume & LinkedIn review',
   },
   {
     number: '04',
     title: 'Build AI Fluency — Fast',
     description:
       "You don't need to become an engineer. You need to become someone who uses AI confidently. Two hours a week for 90 days can transform how employers see you.",
+    linkHref: null,
+    linkLabel: null,
   },
   {
     number: '05',
     title: 'Redesign Your Next Chapter',
     description:
       "This is not the time for desperation. It is the time for intentionality. What do you actually want the next chapter to look like? That question deserves a real answer.",
+    linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
+    linkLabel: "Let's design your next chapter",
   },
 ]
 
@@ -87,13 +97,17 @@ export default function NextSteps() {
                 </p>
 
                 {/* Link */}
-                <a
-                  href="#assessment"
-                  className="inline-flex items-center gap-1.5 text-gold text-sm font-semibold group-hover:gap-2.5 transition-all duration-200 mt-auto"
-                >
-                  Learn more
-                  <ArrowRight size={14} strokeWidth={2.5} />
-                </a>
+                {step.linkHref && step.linkLabel && (
+                  <a
+                    href={step.linkHref}
+                    target={step.linkHref.startsWith('http') ? '_blank' : undefined}
+                    rel={step.linkHref.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="inline-flex items-center gap-1.5 text-gold text-sm font-semibold group-hover:gap-2.5 transition-all duration-200 mt-auto"
+                  >
+                    {step.linkLabel}
+                    <ArrowRight size={14} strokeWidth={2.5} />
+                  </a>
+                )}
               </article>
             )
           })}
