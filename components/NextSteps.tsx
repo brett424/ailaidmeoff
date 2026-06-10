@@ -29,9 +29,9 @@ const steps = [
     number: '04',
     title: 'Build AI Fluency — Fast',
     description:
-      "You don't need to become an engineer. You need to become someone who uses AI confidently. Two hours a week for 90 days can transform how employers see you.",
-    linkHref: null,
-    linkLabel: null,
+      "You don't need to become an engineer. I'm a psychologist who turned 65 and rebuilt an entire business using AI — starting from zero. The barrier isn't technical. It's psychological. If I can do it, I can show you the door. The rest is up to you.",
+    linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
+    linkLabel: "Let's talk about what's possible",
   },
   {
     number: '05',
