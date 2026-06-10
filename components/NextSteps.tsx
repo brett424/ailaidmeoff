@@ -21,9 +21,9 @@ const steps = [
     number: '03',
     title: 'Refresh Your Career Assets',
     description:
-      "Your resume, LinkedIn profile, and portfolio need an AI-era upgrade. Reframe your experience around outcomes, not job duties. Keywords matter more than ever.",
+      "Your resume and LinkedIn need updating — but most people skip the harder step first: figuring out what story to tell. After a disruption like this, your professional identity has shifted. Before you rewrite a single bullet point, let's get clear on the narrative. The words follow from that.",
     linkHref: 'https://calendly.com/brett-flourishinmidlife/30min',
-    linkLabel: 'Get a resume & LinkedIn review',
+    linkLabel: "Let's find your story",
   },
   {
     number: '04',
