@@ -41,7 +41,7 @@ function ProgramCard({
     <article
       className={`relative flex flex-col rounded-2xl p-8 border transition-all duration-300 ${
         featured
-          ? 'border-gold/50 bg-navy/80 shadow-2xl shadow-gold/10 scale-105 z-10'
+          ? 'border-gold/50 bg-navy/80 shadow-2xl shadow-gold/10'
           : 'border-white/10 bg-navy/40 hover:border-white/20'
       }`}
     >
@@ -145,7 +145,7 @@ export default function Programs() {
         </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch max-w-3xl mx-auto">
           {/* Card 1: When a Chapter Ends */}
           <ProgramCard
             badge="Most Comprehensive"
@@ -158,6 +158,8 @@ export default function Programs() {
               'Workbook + assessments',
               'Private community access',
               'Live Q&A session',
+              '1 private coaching session with Brett (included free)',
+              'Flourishing Resilience course — $97 value (included free)',
             ]}
             ctaLabel="Learn More →"
             ctaStyle="gold"
