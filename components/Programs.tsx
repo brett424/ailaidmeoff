@@ -175,8 +175,10 @@ export default function Programs() {
             description="Six focused video sessions and a PDF workbook built around the science of resilience. The frameworks and tools I've used with coaching clients navigating exactly this kind of transition."
             features={[
               '6 video modules',
-              'Workbook + exercises',
+              'Private reflection workbook',
               'Lifetime access',
+              '100% private — no group sharing or public boards',
+              'Fully self-paced — no deadlines or live sessions',
             ]}
             ctaLabel="Enroll Now →"
             ctaStyle="forest"
