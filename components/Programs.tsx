@@ -154,11 +154,10 @@ export default function Programs() {
             price="$997"
             description="A deep, structured program for working through the identity questions, meaning questions, and design questions this transition forces you to answer. This isn't stabilizing — this is rebuilding."
             features={[
-              '8 video modules',
-              'Workbook + assessments',
-              'Private community access',
-              'Live Q&A session',
-              '1 private coaching session with Brett (included free)',
+              '6 video modules',
+              'Workbook included',
+              'Lifetime access',
+              '1 private coaching session with Brett — $1,500 value (included free)',
               'Flourishing Resilience course — $97 value (included free)',
             ]}
             ctaLabel="Learn More →"
