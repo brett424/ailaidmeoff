@@ -54,7 +54,7 @@ export default function Assessment() {
 
         {/* CTA Button */}
         <a
-          href="https://flourishinmidlife.com/what-now-scorecard"
+          href="https://flourishinmidlife.com/what-now-scorecard?source=ailaidmeoff"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-10 py-4 bg-gold text-navy font-bold text-base rounded-md hover:bg-gold/90 active:scale-95 transition-all duration-200 shadow-lg shadow-gold/20 mb-6"
