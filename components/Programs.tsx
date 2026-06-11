@@ -180,9 +180,9 @@ export default function Programs() {
               '100% private — no group sharing or public boards',
               'Fully self-paced — no deadlines or live sessions',
             ]}
-            ctaLabel="Enroll Now →"
+            ctaLabel="Learn More →"
             ctaStyle="forest"
-            ctaHref="https://flourishinginmidlife.podia.com/flourishing-resilience"
+            ctaHref="https://flourishinmidlife.com/flourishing-resilience?source=ailaidmeoff"
           />
         </div>
       </div>
