@@ -12,7 +12,6 @@ const quickLinks = [
 const programs = [
   { label: 'Flourishing Resilience', href: '#programs' },
   { label: 'When a Chapter Ends', href: '#programs' },
-  { label: '1:1 Coaching', href: '#programs' },
 ]
 
 export default function Footer() {
@@ -87,13 +86,24 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://tooyoungtobedone.com/coaching"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-sm transition-colors duration-200"
+                >
+                  <ExternalLink size={14} strokeWidth={2} />
+                  Private coaching → TooYoungToBeDone.com
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://flourishinmidlife.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white/60 hover:text-gold text-sm transition-colors duration-200"
                 >
                   <ExternalLink size={14} strokeWidth={2} />
-                  flourishinmidlife.com
+                  Assessments &amp; courses → flourishinmidlife.com
                 </a>
               </li>
               <li>

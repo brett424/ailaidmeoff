@@ -21,37 +21,37 @@ export default function Reality() {
         </h2>
 
         {/* Stats Row */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16">
           {/* Stat 1 */}
-          <div className="text-center sm:text-left">
+          <div className="border-l-4 border-gold pl-6">
             <p className="text-navy text-4xl sm:text-5xl font-black mb-2">14M+</p>
             <p className="text-charcoal text-sm leading-relaxed">
-              Projected U.S. job losses from AI by 2030
-              <span className="block text-charcoal/60 text-xs mt-1">(McKinsey Global Institute)</span>
+              U.S. workers projected to need to change occupations by 2030 due to automation and AI.{' '}
+              <a
+                href="https://www.mckinsey.com/featured-insights/future-of-work/the-future-of-work-after-covid-19"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-forest underline underline-offset-2 hover:text-forest/70 transition-colors"
+              >
+                McKinsey Global Institute, 2021
+              </a>
             </p>
           </div>
-
-          {/* Divider — horizontal on mobile */}
-          <div className="hidden sm:block border-l border-charcoal/20" aria-hidden="true" />
-          <div className="block sm:hidden border-t border-charcoal/20 my-4" aria-hidden="true" />
 
           {/* Stat 2 */}
-          <div className="text-center sm:text-left sm:pl-8">
-            <p className="text-navy text-4xl sm:text-5xl font-black mb-2">40%</p>
+          <div className="border-l-4 border-gold pl-6">
+            <p className="text-navy text-4xl sm:text-5xl font-black mb-2">~40%</p>
             <p className="text-charcoal text-sm leading-relaxed">
-              Of current job tasks are automatable with today&rsquo;s AI technology
-            </p>
-          </div>
-
-          {/* Divider */}
-          <div className="hidden sm:block border-l border-charcoal/20" aria-hidden="true" />
-          <div className="block sm:hidden border-t border-charcoal/20 my-4" aria-hidden="true" />
-
-          {/* Stat 3 */}
-          <div className="text-center sm:text-left sm:pl-8">
-            <p className="text-navy text-4xl sm:text-5xl font-black mb-2">71%</p>
-            <p className="text-charcoal text-sm leading-relaxed">
-              Of AI-displaced workers are 40 or older — the most experienced professionals
+              Of global employment is exposed to AI — with higher-income economies facing greater
+              disruption.{' '}
+              <a
+                href="https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-forest underline underline-offset-2 hover:text-forest/70 transition-colors"
+              >
+                IMF, 2024
+              </a>
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react'
 
 const credentials = [
-  'PhD — Positive Psychology',
+  'PhD in Industrial and Organizational Psychology',
   'PCC (ICF Certified)',
   'Author & Speaker',
   '20+ Years Coaching',
@@ -50,11 +50,11 @@ export default function About() {
                 life after the death of my wife.
               </p>
               <p className="text-charcoal text-base leading-relaxed">
-                My doctoral research focused on the lived experience of mid-career professionals
-                who go through a layoff and successfully come back. I interviewed 11 men who went
-                through exactly what you&rsquo;re facing. Every single one ended up saying it was
-                the best thing that ever happened to them — but not without doing the real work
-                first.
+                My doctoral research in Industrial and Organizational Psychology examined exactly
+                what you&rsquo;re going through: how professionals recover and rebuild after major
+                career disruption. I interviewed 11 men who had been laid off and came back
+                stronger. Every single one said it was the best thing that ever happened to them
+                — but not without doing the real work first.
               </p>
               <p className="text-charcoal text-base leading-relaxed font-medium">
                 I&rsquo;m not selling optimism. I&rsquo;m offering a map built from research and
@@ -74,16 +74,27 @@ export default function About() {
               ))}
             </div>
 
-            {/* External Link */}
-            <a
-              href="https://flourishinmidlife.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-forest/70 transition-colors duration-200"
-            >
-              Visit my main practice &rarr; flourishinmidlife.com
-              <ExternalLink size={14} strokeWidth={2} />
-            </a>
+            {/* External Links */}
+            <div className="flex flex-col gap-2">
+              <a
+                href="https://tooyoungtobedone.com/coaching"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-forest font-semibold text-sm hover:text-forest/70 transition-colors duration-200"
+              >
+                For private coaching for accomplished leaders &rarr; TooYoungToBeDone.com
+                <ExternalLink size={14} strokeWidth={2} />
+              </a>
+              <a
+                href="https://flourishinmidlife.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-charcoal/50 text-sm hover:text-charcoal/70 transition-colors duration-200"
+              >
+                Assessments, courses &amp; transition resources &rarr; flourishinmidlife.com
+                <ExternalLink size={14} strokeWidth={2} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

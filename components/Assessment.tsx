@@ -30,9 +30,9 @@ export default function Assessment() {
 
         {/* Subtext */}
         <p className="text-charcoal text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed text-balance">
-          The &ldquo;What Now After AI?&rdquo; Scorecard is a 12-question assessment that tells you
-          your transition readiness score — and what to do next based on where you actually are,
-          not where you think you should be.
+          The &ldquo;What Now?&rdquo; Transition Readiness Scorecard is a 12-question assessment
+          that tells you your transition readiness score — and what to do next based on where you
+          actually are, not where you think you should be.
         </p>
 
         {/* Benefits Row */}

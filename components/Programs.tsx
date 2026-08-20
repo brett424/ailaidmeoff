@@ -110,33 +110,27 @@ export default function Programs() {
           Built from research and lived experience — not theory.
         </p>
 
-        {/* Flagship Coaching Block */}
+        {/* Premium Referral Module */}
         <div className="mb-12 p-8 sm:p-10 rounded-2xl border border-gold/30 bg-gradient-to-br from-white/5 to-gold/5">
           <p className="text-gold text-xs font-bold tracking-widest uppercase mb-3">
-            The Flagship Offer
+            Private Coaching for High-Stakes Transitions
           </p>
           <h3 className="text-white text-2xl sm:text-3xl font-black mb-4 leading-tight max-w-2xl">
-            Private 1:1 Coaching — $1,500/month
+            Facing a consequential leadership, business, or career decision?
           </h3>
           <p className="text-white/70 text-base leading-relaxed max-w-2xl mb-6">
-            I work with a small number of clients at a time. This is not a course. Not a group.
-            Not a program you work through on your own. It is direct, private, weekly work with
-            me — built around where you are, what you&rsquo;re carrying, and where you&rsquo;re
-            trying to go.
+            For executives, founders, entrepreneurs, and accomplished leaders who want a rigorous
+            private thought partner, Brett offers a limited number of six-month coaching
+            engagements through Too Young to Be Done.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-            <a
-              href="https://calendly.com/brett-flourishinmidlife/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-3.5 bg-gold text-navy font-bold text-sm rounded-lg hover:bg-gold/90 active:scale-95 transition-all duration-200 shadow-lg shadow-gold/20"
-            >
-              Book a Free 30-Min Strategy Call →
-            </a>
-            <p className="text-white/40 text-xs m-0">
-              No cost. No obligation. I respond to every inquiry personally.
-            </p>
-          </div>
+          <a
+            href="https://tooyoungtobedone.com/coaching"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-7 py-3.5 bg-gold text-navy font-bold text-sm rounded-lg hover:bg-gold/90 active:scale-95 transition-all duration-200 shadow-lg shadow-gold/20"
+          >
+            Explore Private Coaching →
+          </a>
         </div>
 
         {/* Divider */}
@@ -152,7 +146,7 @@ export default function Programs() {
             badgeStyle="featured"
             title="When a Chapter Ends"
             price="$997"
-            description="A deep, structured program for working through the identity questions, meaning questions, and design questions this transition forces you to answer. This isn't stabilizing — this is rebuilding."
+            description="Structured self-paced guidance for people who want to do the real work of transition — identity, meaning, direction — before or alongside whatever comes next. Six modules. Honest frameworks. No optimism for its own sake."
             features={[
               '6 video modules',
               'Workbook included',
@@ -172,7 +166,7 @@ export default function Programs() {
             badgeStyle="default"
             title="Flourishing Resilience"
             price="$97"
-            description="Six focused video sessions and a PDF workbook built around the science of resilience. The frameworks and tools I've used with coaching clients navigating exactly this kind of transition."
+            description="Six focused video sessions and a PDF workbook built around the science of resilience. A practical resource for people who want structured, self-paced guidance through the psychological work of transition — on their own schedule, without a group."
             features={[
               '6 video modules',
               'Private reflection workbook',
