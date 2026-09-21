@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
+import Video from '@/components/Video'
 import Reality from '@/components/Reality'
 import NextSteps from '@/components/NextSteps'
 import Resources from '@/components/Resources'
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
+        <Video />
         <Reality />
         <NextSteps />
         <Resources />
