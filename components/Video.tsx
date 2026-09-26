@@ -29,14 +29,18 @@ export default function Video() {
           className="relative w-full overflow-hidden rounded-xl shadow-2xl shadow-black/50 mb-12"
           style={{ paddingBottom: '56.25%' }}
         >
-          <iframe
-            src="https://player.vimeo.com/video/1228943876?badge=0&title=0&byline=0&portrait=0&autopause=0&dnt=1"
+          <video
+            src="/assets/video/intro.mp4"
+            poster="/assets/video/intro-poster-v2.jpg"
+            controls
+            playsInline
+            preload="none"
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-            allowFullScreen
-            loading="lazy"
-            title="An introduction to AI Laid Me Off with Dr. Brett Blair"
-          />
+            aria-label="An introduction to AI Laid Me Off with Dr. Brett Blair"
+          >
+            Your browser does not support embedded video.{' '}
+            <a href="/assets/video/intro.mp4">Watch Brett&rsquo;s introduction.</a>
+          </video>
         </div>
 
         {/* CTA — same destination as hero assessment button */}
